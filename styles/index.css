@@ -2,6 +2,7 @@ body{
     margin: 0px !important;
     font-family: 'Libre Baskerville', serif;
     color:#745763;
+    font-size: 12px;
 }
 
 
@@ -11,11 +12,13 @@ a.menu_link:hover {
     cursor: pointer;
 }
 .header{
-    color: inherit;
+    color: white;
+    background-color: #BB7D85 ;
     display: flex;
     height: 50px; 
     justify-content: space-between;
     align-items: center;
+    
     margin: 0;
     width: 100%;
 }
@@ -30,8 +33,8 @@ ol{
 
 .header 
 ol li{
-    margin:0;
-    padding: 0;
+    align-items: center;
+    justify-content: center;
     list-style: none;
     height: inherit;
     
@@ -41,19 +44,19 @@ ol li{
     height: inherit;
     color: inherit;
     text-decoration: none;
-    display: flex;
     align-items: center;
     padding: 0 15px;
-    margin: 10px 0 0 0 ;
-    font-size: 18px;
     font-weight: lighter;
 }
-
+.header__title {
+  display: flex;
+}
 .header__title a{
-    margin: 10px 0 0 0 ;
-    font-size: 30px;
+   
+    font-size: 20px;
     font-weight: bolder;
     padding: 0 15px ;
+    align-items: center;
 }
 
 #home{
@@ -70,7 +73,7 @@ ol li{
     align-items: center;
     border-bottom: #BB7D85 2px solid;
     grid-template-columns: 10% 40% 40% 10%;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 25% auto;
 }
 
 .home__intro--msg{
@@ -131,10 +134,9 @@ ol li{
     letter-spacing: 1px;
     margin: 10px 0px;
     background-color: rgba(255,255,255,.1);
-    width:30%;
-    font-size: 16px;
-    padding: 0;
-    margin: 5% 0;
+    width:25%;
+    padding: 0 1em;
+    margin: 10% 0;
     cursor: pointer;
 }
 .home__intro--msg button:hover{
